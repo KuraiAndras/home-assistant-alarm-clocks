@@ -1,16 +1,26 @@
 {
-  "name": "Example Home Assistant add-on repository",
+  "name": "Alarm Clocks",
   "image": "ghcr.io/home-assistant/devcontainer:addons",
-  "appPort": ["7123:8123", "7357:4357"],
+  "appPort": [
+    "7123:8123",
+    "7357:4357"
+  ],
   "postStartCommand": "bash devcontainer_bootstrap",
-  "runArgs": ["-e", "GIT_EDITOR=code --wait", "--privileged"],
-  "remoteUser":"root",
+  "runArgs": [
+    "-e",
+    "GIT_EDITOR=code --wait",
+    "--privileged"
+  ],
+  "remoteUser": "root",
   "containerEnv": {
     "WORKSPACE_DIRECTORY": "${containerWorkspaceFolder}"
   },
   "customizations": {
     "vscode": {
-      "extensions": ["timonwong.shellcheck", "esbenp.prettier-vscode"],
+      "extensions": [
+        "timonwong.shellcheck",
+        "esbenp.prettier-vscode"
+      ],
       "settings": {
         "terminal.integrated.profiles.linux": {
           "zsh": {
@@ -25,5 +35,7 @@
       }
     }
   },
-  "mounts": ["type=volume,target=/var/lib/docker"]
+  "mounts": [
+    "type=volume,target=/var/lib/docker"
+  ]
 }

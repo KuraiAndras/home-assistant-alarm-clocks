@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Example Home Assistant add-on repository
-url: 'https://github.com/home-assistant/addons-example'
-maintainer: Awesome Maintainer <awesome@example.com>
+name: Alarm Clocks
+url: "https://github.com/KuraiAndras/home-assistant-alarm-clocks"
+maintainer: Kurai András <k.andras9642@gmail.com>
